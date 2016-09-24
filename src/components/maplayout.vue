@@ -14,7 +14,7 @@ export default {
     return {}
   },
   ready () {
-    setTimeout(this.createMap(), 500)
+    this.createMap()
   },
   methods: {
     createMap: function () {

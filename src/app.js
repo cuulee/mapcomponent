@@ -19,7 +19,6 @@ console.dir(mapboxgl)
  */
 require('./themes/app.' + __THEME + '.styl')
 // require('quasar/dist/quasar.' + __THEME + '.css')
-require('./themes/app.styl') // customized style-elements
 Quasar.theme.set(__THEME)
 
 Vue.use(VueTouch) // Touch events
