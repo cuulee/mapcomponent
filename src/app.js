@@ -4,9 +4,6 @@ import VueTouch from 'vue-touch'
 // import VueResource from 'vue-resource'
 import Quasar from 'quasar-framework'
 import Router from './router'
-import mapboxgl from 'mapbox-gl'
-// import Map from './components/maplayout.vue'
-console.dir(mapboxgl)
 
 /*
  If overriding Quasar style, leave uncommented
@@ -27,8 +24,5 @@ Vue.use(VueTouch) // Touch events
 Vue.use(Quasar) // Install Quasar Framework
 
 Quasar.start(() => {
-  Router.start(Vue.extend({}), '#quasar-app')
+  Router.start(Vue.extend({}), '#quasar-app')  // creates an instance of Vue.extend({}) and mounts it to element mentioned.
 })
-
-export { default as mapboxgl } from 'mapbox-gl'
-
